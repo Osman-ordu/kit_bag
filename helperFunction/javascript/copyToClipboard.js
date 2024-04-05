@@ -1,4 +1,6 @@
-export const copyToClipboard = async (message: string) => {
+import { toastError, toastSuccess } from "../../components/typescript/toast";
+
+export const copyToClipboard = async (message) => {
   try {
     await navigator.clipboard.writeText(message);
     toastSuccess('Copied');
