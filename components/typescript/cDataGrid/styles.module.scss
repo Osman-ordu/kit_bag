@@ -1,0 +1,10 @@
+.c-datagrid {
+    &__enabledButton {
+      &.off {
+        background-color: #871616 !important;
+      }
+      &.on {
+        background-color: #347b47 !important;
+      }
+    }
+  }
