@@ -1,0 +1,25 @@
+.c-loader {
+    @include displayCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+    &__spin {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 3px solid;
+      border-color: #fff transparent;
+      animation: spin 1s infinite ease-out;
+      opacity: 0.5;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
